@@ -325,7 +325,7 @@ async function selectCorrectResponse(question, responses, responseElements) {
       console.log("Detected reading page — clicking 'To Questions'...");
       await sleep(1000);
       toQuestionsButton.click();
-      await sleep(3000);
+      await sleep(1000);
     } else {
       console.log(
         "Reading page detected, but 'To Questions' button not found — skipping."
@@ -339,7 +339,7 @@ async function selectCorrectResponse(question, responses, responseElements) {
         toQuestionsButton.click();
       }
 
-      await sleep(3000); // give time for next question to load
+      await sleep(1500); // give time for next question to load
     }
 
     return;
@@ -417,7 +417,7 @@ async function selectCorrectResponse(question, responses, responseElements) {
             ".choices-container .choice-item-wrapper .content p"
           );
           drop = document.querySelectorAll(".-placeholder.choice-item-wrapper");
-          await sleep(2000);
+          await sleep(1500);
           numDrops += 1;
           if (numDrops > 6) {
             console.log("Giving up drag and drop");
@@ -484,7 +484,7 @@ async function selectCorrectResponse(question, responses, responseElements) {
 
   // move on to next question
   await incrementStat("solved");
-  await sleep(Math.random() * 200 + 600);
+  await sleep(Math.random() * 100 + 600);
   let nextButton = document
     .getElementsByClassName("next-button-container")[0]
     .getElementsByTagName("button")[0];
@@ -543,7 +543,7 @@ async function activateBot() {
             if (toQuestionsButton) {
               console.log("Clicking 'To Questions' button...");
               toQuestionsButton.click();
-              await sleep(2000); // allow page to load
+              await sleep(1000); // allow page to load
             } else {
               console.warn("No 'To Questions' button found, waiting...");
               await sleep(1000);
@@ -571,7 +571,7 @@ async function activateBot() {
       }
 
       // randomized wait to mimic human timing between actions
-      await sleep(Math.random() * 200 + 600);
+      await sleep(Math.random() * 100 + 400);
     }
   }
 }

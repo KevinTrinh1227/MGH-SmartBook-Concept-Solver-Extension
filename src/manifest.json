@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "McGrawHill Concepts Solver Bot",
+  "name": "McGraw-Hill SmartBooks Solver",
   "description": "Automates Solving McGrawHill SmartBook concept questions for educational and demonstration purposes only. Window must be active for it to continously solve questions.",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "author": "Kevin Trinh",
   "homepage_url": "https://www.kevintrinh.dev",
   "action": {
@@ -27,14 +27,14 @@
 
   "web_accessible_resources": [
     {
-      "resources": ["logo.png"],
+      "resources": ["./assets/logo.png"],
       "matches": ["*://learning.mheducation.com/*"]
     }
   ],
 
   "icons": {
-    "16": "logo.png",
-    "48": "logo.png",
-    "128": "logo.png"
+    "16": "./assets/logo.png",
+    "48": "./assets/logo.png",
+    "128": "./assets/logo.png"
   }
 }

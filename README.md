@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/KevinTrinh1227/McGrawHill-SmartBook-Solver/refs/heads/main/src/logo.png" alt="McGraw-Hill SmartBook Solver Logo" width="120" height="120">
+  <img src="https://raw.githubusercontent.com/KevinTrinh1227/McGrawHill-SmartBook-Solver/refs/heads/main/src/assets/logo.png" alt="McGraw-Hill SmartBook Solver Logo" width="120" height="120">
 </p>
 
 <h1 align="center">McGraw-Hill SmartBook Solver</h1>
@@ -16,15 +16,14 @@ This project is built **strictly for educational and demonstration purposes only
 
 By using this extension, you acknowledge and agree to the following:
 
-- This tool should **not** be used on graded coursework, quizzes, or exams.  
-- You are **solely responsible** for how you use this extension.  
-- The developer (**Kevin Trinh**) is **not affiliated** with McGraw-Hill Education or any educational institution.  
-- The developer assumes **no liability** for misuse, academic consequences, or policy violations.  
+- This tool should **not** be used on graded coursework, quizzes, or exams.
+- You are **solely responsible** for how you use this extension.
+- The developer (**Kevin Trinh**) is **not affiliated** with McGraw-Hill Education or any educational institution.
+- The developer assumes **no liability** for misuse, academic consequences, or policy violations.
 
 This project serves as an **educational exploration** of web automation and browser extension development — **not** as a cheating tool.
 
 ---
-
 
 ## 🧠 Overview
 
@@ -36,13 +35,13 @@ This project was **never published publicly** because I would never encourage ac
 
 ## ✨ Key Features
 
-- **Auto-solves SmartBook concept questions** intelligently and efficiently  
-- Supports **multiple question types** — including drag & drop, fill-in-the-blank, and multiple-choice  
-- Clean, intuitive, and **user-friendly popup interface**  
-- Tracks both **session and all-time statistics**  
-- Displays **uptime counter** and **real-time activity status**  
-- Built-in **Terms of Service acknowledgment** for ethical use  
-- **Lightweight and secure** — runs locally with no external data collection  
+- **Auto-solves SmartBook concept questions** intelligently and efficiently
+- Supports **multiple question types** — including drag & drop, fill-in-the-blank, and multiple-choice
+- Clean, intuitive, and **user-friendly popup interface**
+- Tracks both **session and all-time statistics**
+- Displays **uptime counter** and **real-time activity status**
+- Built-in **Terms of Service acknowledgment** for ethical use
+- **Lightweight and secure** — runs locally with no external data collection
 - Compatible with **all Chromium-based browsers**, including (but not limited to):  
   Google Chrome, Microsoft Edge, Brave, Opera, Vivaldi, Arc Browser, Chromium (open-source), Opera GX, Samsung Internet (Desktop Beta), Iron Browser, Blisk Developer Browser, Kiwi Browser (Android), Yandex Browser, and many more.
 
@@ -50,12 +49,10 @@ All of these browsers support the **same Chromium extension system**, ensuring s
 
 ---
 
-
-
 ## 🧭 How to Use the Browser Extension <a id="how-to-use"></a>
 
-1. **Open McGraw-Hill SmartBook** on your browser.
-2. Click the 📘 **SmartBook Solver** icon in your toolbar. (Recommend that you pin it)
+1. **Open McGraw-Hill SmartBook** assignment on your compatable browser.
+2. Click browser extensions toolbar and click on the Solver Extension. (Recommend that you pin it)
 3. Read and acknowledge the disclaimer:
    - Type your full name.
    - Check “I agree to the terms above.”
@@ -109,6 +106,35 @@ If you prefer direct source installation:
 git clone https://github.com/KevinTrinh1227/McGrawHill-SmartBook-Solver.git
 cd McGrawHill-SmartBook-Solver
 ```
+
+---
+
+## ⚙️ How It Works (Under the Hood)
+
+McGraw-Hill SmartBook “Concepts” assignments are designed as **participation-based learning activities** — not exams.  
+You don’t earn points for getting every question correct; instead, you “master” each concept over time through practice and repetition.
+
+This extension was built with that philosophy in mind.  
+Rather than aiming for high accuracy through AI or answer scraping, it works through **progressive learning automation**:
+
+- The bot **selects answers randomly** on the first attempt.
+- If it gets a question **wrong**, it quietly **stores the correct answer** for that concept locally (offline).
+- When that same question reappears later, the bot **answers it correctly** the next time.
+- Over time, the extension builds a **local cache of mastered questions**, completing concepts more efficiently.
+
+Because all logic runs **entirely offline**, it makes no API calls or external requests — ensuring privacy, performance, and reliability.
+
+If SmartBook redirects you to a reading section after too many missed attempts,  
+the extension will **automatically navigate back to the question screen** and continue working.
+
+✅ **Supported Question Types:**
+
+- Multiple Choice
+- Fill in the Blank
+- Drag and Drop
+
+In short — this tool simulates the natural learning cycle of “trial and improvement,”  
+making SmartBook sessions smoother, faster, and more focused on completion efficiency rather than accuracy chasing.
 
 ---
 
