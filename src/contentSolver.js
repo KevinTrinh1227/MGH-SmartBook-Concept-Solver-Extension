@@ -23,17 +23,28 @@ window.addEventListener("message", (event) => {
 
 async function incrementStat(statKey) {
   try {
-    const data = await chrome.storage.local.get(["stats", "allTime"]);
-    const stats = data.stats || { solved: 0, stored: 0 };
-    const allTime = data.allTime || { solved: 0, stored: 0 };
+    if (!chrome?.storage?.local) {
+      console.warn("incrementStat: chrome.storage.local not available.");
+      return;
+    }
 
-    // Increment both
-    stats[statKey] = (stats[statKey] || 0) + 1;
-    allTime[statKey] = (allTime[statKey] || 0) + 1;
+    chrome.storage.local.get(["stats", "allTime"], (data) => {
+      try {
+        const stats = data?.stats || { solved: 0, stored: 0 };
+        const allTime = data?.allTime || { solved: 0, stored: 0 };
 
-    await chrome.storage.local.set({ stats, allTime });
+        stats[statKey] = (stats[statKey] || 0) + 1;
+        allTime[statKey] = (allTime[statKey] || 0) + 1;
+
+        chrome.storage.local.set({ stats, allTime }, () => {
+          console.log(`incrementStat: updated "${statKey}" successfully.`);
+        });
+      } catch (err) {
+        console.error("incrementStat: failed to update storage:", err);
+      }
+    });
   } catch (err) {
-    console.error("Error updating stats:", err);
+    console.error("incrementStat: unexpected error:", err);
   }
 }
 
@@ -421,7 +432,7 @@ async function selectCorrectResponse(question, responses, responseElements) {
         for (let x = 0; x < blanks.length; x++) {
           let inputTag = blanks[x].getElementsByTagName("input")[0];
           inputTag.focus();
-          document.execCommand("insertText", false, "IDK");
+          document.execCommand("insertText", false, "Guess-Answer");
         }
       }
     } else {
@@ -501,38 +512,65 @@ async function answerQuestion() {
 let answerQuestionRunning = false;
 async function activateBot() {
   console.log("S: Activating Bot");
+
   if (botEnabled === null) {
     botEnabled = true;
+
+    await sleep(1000); // slight delay to stabilize DOM before starting
+    let errorCount = 0; // track consecutive errors to avoid infinite loops
+
     while (botEnabled) {
       if (!answerQuestionRunning) {
         answerQuestionRunning = true;
+
         try {
+          // detect if we're on a reading page instead of a question
           const isReadingPage =
             !document.querySelector(".prompt") &&
             !!document.querySelector(
               'button[data-automation-id="reading-questions-button"]'
             );
+
           if (isReadingPage) {
             console.log(
               "Detected reading page — pausing solver until back on questions."
             );
+
             const toQuestionsButton = safeQuery(
               'button[data-automation-id="reading-questions-button"]'
             );
+
             if (toQuestionsButton) {
+              console.log("Clicking 'To Questions' button...");
               toQuestionsButton.click();
-              await sleep(4000);
+              await sleep(2000); // allow page to load
             } else {
-              await sleep(2000);
+              console.warn("No 'To Questions' button found, waiting...");
+              await sleep(1000);
             }
           } else {
+            // main question solving
             await answerQuestion();
           }
+
+          errorCount = 0; // reset error counter on successful iteration
         } catch (error) {
+          errorCount++;
           console.error("Error while answering question:", error);
+
+          if (errorCount > 5) {
+            console.warn(
+              "⚠️ Too many consecutive errors — auto-pausing solver for safety."
+            );
+            deactivateBot();
+            break;
+          }
         }
+
         answerQuestionRunning = false;
       }
+
+      // randomized wait to mimic human timing between actions
       await sleep(Math.random() * 200 + 600);
     }
   }

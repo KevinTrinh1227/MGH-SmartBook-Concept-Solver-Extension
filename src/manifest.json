@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "McGrawHill Concepts Solver Bot",
-  "description": "Automates McGrawHill SmartBook concept questions for educational and demonstration purposes only.",
+  "description": "Automates Solving McGrawHill SmartBook concept questions for educational and demonstration purposes only. Window must be active for it to continously solve questions.",
   "version": "1.1.0",
   "author": "Kevin Trinh",
   "homepage_url": "https://www.kevintrinh.dev",

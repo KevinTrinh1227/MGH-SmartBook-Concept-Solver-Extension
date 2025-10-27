@@ -3,9 +3,9 @@
  * ---------------------------------------
  * Handles popup UI logic for the Chrome extension.
  * Features:
- *  - Disclaimer only reappears when bot is OFF
+ *  - One-time disclaimer with full name + signature
  *  - Persistent ON/OFF state across popup openings
- *  - Session start time + live uptime tracker
+ *  - Session start time + live uptime tracker (inline)
  *  - Session & all-time stats updated in real-time
  */
 
@@ -16,22 +16,32 @@ document.addEventListener("DOMContentLoaded", async () => {
   const agreeCheckbox = document.getElementById("agreeCheckbox");
   const agreeBtn = document.getElementById("agreeBtn");
   const statusText = document.getElementById("statusText");
+  const nameInput = document.getElementById("fullName");
+  const infoIcon = document.getElementById("infoIcon");
 
   const statAllTimeSolved = document.getElementById("statAllTimeSolved");
   const statAllTimeStored = document.getElementById("statAllTimeStored");
   const statSolved = document.getElementById("statSolved");
   const statStored = document.getElementById("statStored");
 
-  // session info container
+  // ---------- CREATE INLINE SESSION INFO ----------
   const sessionInfoBox = document.createElement("div");
-  sessionInfoBox.className = "session-info";
-  const sessionStartElem = document.createElement("p");
-  const sessionUptimeElem = document.createElement("p");
+  sessionInfoBox.className = "session-info-inline";
+  const sessionStartElem = document.createElement("span");
+  const divider = document.createElement("span");
+  const sessionUptimeElem = document.createElement("span");
+
+  divider.style.margin = "0 6px";
+  divider.style.opacity = "0.6";
+
   sessionInfoBox.appendChild(sessionStartElem);
+  sessionInfoBox.appendChild(divider);
   sessionInfoBox.appendChild(sessionUptimeElem);
 
-  const statsBox = document.getElementById("statsBox");
-  statsBox.after(sessionInfoBox);
+  infoIcon.removeAttribute("title");
+
+  const statusBox = document.getElementById("statusBox");
+  statusBox.after(sessionInfoBox);
 
   let uptimeInterval = null;
 
@@ -62,11 +72,13 @@ document.addEventListener("DOMContentLoaded", async () => {
   const startUptimeTimer = (startTime) => {
     clearInterval(uptimeInterval);
     const start = new Date(startTime);
-    sessionStartElem.textContent = `Session started at: ${start.toLocaleTimeString()}`;
+
     const update = () => {
       const diff = Date.now() - start.getTime();
+      sessionStartElem.textContent = `Start Time: ${start.toLocaleTimeString()}`;
       sessionUptimeElem.textContent = `Uptime: ${formatTime(diff)}`;
     };
+
     update();
     uptimeInterval = setInterval(update, 1000);
   };
@@ -79,16 +91,39 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   // ---------- LOAD STATE ----------
   chrome.storage.local.get(
-    ["stats", "allTime", "botEnabled", "sessionStart"],
+    [
+      "stats",
+      "allTime",
+      "botEnabled",
+      "sessionStart",
+      "userAcceptedDisclaimer",
+    ],
     (result) => {
       const stats = result.stats || { solved: 0, stored: 0 };
       const allTime = result.allTime || { solved: 0, stored: 0 };
       const botEnabled = result.botEnabled || false;
       const sessionStart = result.sessionStart || null;
+      const accepted = result.userAcceptedDisclaimer || null;
 
       updateStatsUI(stats, allTime);
 
-      // if bot currently ON → skip disclaimer
+      // if disclaimer was already signed → skip permanently
+      if (accepted && accepted.name) {
+        disclaimerScreen.style.display = "none";
+        mainScreen.style.display = "flex";
+        const toggle = document.getElementById("botToggle");
+        attachToggleListener(toggle);
+
+        const { name: aName, agreed: aAgreed, timestamp: aTs } = accepted;
+        infoIcon.setAttribute(
+          "data-tooltip",
+          `Signed User: ${aName}\nAgreed to TOS: ${
+            aAgreed ? "True" : "False"
+          }\nSigned: ${new Date(aTs).toLocaleString()}`
+        );
+      }
+
+      // if bot currently ON → restore
       if (botEnabled) {
         disclaimerScreen.style.display = "none";
         mainScreen.style.display = "flex";
@@ -101,19 +136,45 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
   );
 
-  // ---------- DISCLAIMER ----------
-  agreeCheckbox.addEventListener("change", () => {
-    agreeBtn.disabled = !agreeCheckbox.checked;
-  });
+  // ---------- DISCLAIMER HANDLING ----------
+  function validateDisclaimerInputs() {
+    const nameFilled = nameInput.value.trim().length > 1;
+    const checked = agreeCheckbox.checked;
+    agreeBtn.disabled = !(nameFilled && checked);
+  }
+
+  nameInput.addEventListener("input", validateDisclaimerInputs);
+  agreeCheckbox.addEventListener("change", validateDisclaimerInputs);
 
   agreeBtn.addEventListener("click", () => {
+    const name = nameInput.value.trim();
+    const agreed = agreeCheckbox.checked;
+    if (!name || !agreed) return;
+
+    const timestamp = new Date().toISOString();
+
+    // Save one-time consent
+    chrome.storage.local.set({
+      userAcceptedDisclaimer: { name, agreed, timestamp },
+    });
+
+    // Tooltip setup immediately
+    infoIcon.setAttribute(
+      "data-tooltip",
+      `User: ${name}\nAgreed to TOS: ${
+        agreed ? "True" : "False"
+      }\nSigned: ${new Date(timestamp).toLocaleString()}`
+    );
+
+    // Hide disclaimer permanently
     disclaimerScreen.style.display = "none";
     mainScreen.style.display = "flex";
+
     const toggle = document.getElementById("botToggle");
     attachToggleListener(toggle);
   });
 
-  // ---------- ATTACH TOGGLE LISTENER ----------
+  // ---------- TOGGLE HANDLER ----------
   function attachToggleListener(toggle) {
     if (!toggle) return;
 

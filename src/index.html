@@ -9,8 +9,8 @@
   <body>
     <!-- STEP 1: Disclaimer -->
     <div id="disclaimerScreen" class="active">
-      <h1 class="project-title">McGrawHill Concepts Bot</h1>
-      <h2 class="disclaimer-header">⚠️ Terms Of Service</h2>
+      <h1 class="project-title">McGrawHill Smart Books Solver</h1>
+      <h2 class="disclaimer-header">NOTICE: Terms Of Service</h2>
       <div id="disclaimerBox">
         <p>
           This extension was built for
@@ -24,21 +24,33 @@
         </p>
       </div>
 
-      <label class="checkbox-agree">
-        <input type="checkbox" id="agreeCheckbox" /> I have read and agree to
-        the terms above.
-      </label>
-      <button id="agreeBtn" disabled>I Agree & Continue</button>
+      <div class="signature-wrapper">
+        <label for="fullName">Type your full name to acknowledge:</label>
+        <input
+          type="text"
+          id="fullName"
+          placeholder="Enter Your Full Name"
+          autocomplete="off"
+        />
+
+        <label class="checkbox-agree">
+          <input type="checkbox" id="agreeCheckbox" /> I have read and agree to
+          the terms above.
+        </label>
+
+        <button id="agreeBtn" disabled>I Agree & Understand</button>
+      </div>
     </div>
 
     <!-- STEP 2: Main Control Screen -->
     <div id="mainScreen" style="display: none">
       <img class="logo" src="logo.png" alt="Bot Logo" />
-      <h1 class="project-title">McGrawHill Concepts Bot</h1>
+      <h1 class="project-title">McGrawHill Smart Books Solver</h1>
 
       <p class="subtitle">
-        Automatically solves McGrawHill SmartBook concept questions. For
-        educational purposes only. Use at your own discretion.
+        Automatically solves McGrawHill SmartBook concept questions. Built for
+        educational purposes only. Use at your own discretion. Click the switch
+        below to activate or deactivate the smart book solver.
       </p>
 
       <!-- Toggle Switch & Status -->
@@ -52,7 +64,12 @@
 
       <!-- Stats Section -->
       <div id="statsBox">
-        <h3>My Stats</h3>
+        <div class="stats-header">
+          <h3>My SmartBook Stats</h3>
+          <span id="infoIcon" class="info-icon" role="img" aria-label="Info">
+            <img src="icons/information-circle.svg" alt="Info" />
+          </span>
+        </div>
 
         <div class="stats-grid">
           <div class="stat-item">
@@ -80,35 +97,30 @@
       <!-- Bottom Buttons -->
       <div id="bottomButtons">
         <a
-          href="https://github.com/KevinTrinh1227/MGH-SmartBook-Concept-Solver-Extension/releases"
+          href="https://github.com/KevinTrinh1227/McGrawHill-SmartBook-Solver/releases"
           target="_blank"
           class="action-btn"
         >
-          <img
-            src="https://cdn.jsdelivr.net/gh/tabler/tabler-icons/icons/download.svg"
-            class="btn-icon"
-          />
+          <img src="icons/download.svg" class="btn-icon" />
           Download Extension
         </a>
 
         <a
-          href="https://github.com/KevinTrinh1227/MGH-SmartBook-Concept-Solver-Extension/issues"
+          href="https://github.com/KevinTrinh1227/McGrawHill-SmartBook-Solver"
           target="_blank"
           class="action-btn"
         >
-          <img
-            src="https://cdn.jsdelivr.net/gh/tabler/tabler-icons/icons/help-circle.svg"
-            class="btn-icon"
-          />
-          Support / Issues
+          <img src="icons/help-circle.svg" class="btn-icon" />
+          How To Use
         </a>
       </div>
 
       <footer>
-        Built by
-        <a href="https://www.kevintrinh.dev" target="_blank">Kevin Trinh</a
+        Built by: Kevin Trinh •
+        <a href="https://www.kevintrinh.dev" target="_blank"
+          >www.kevintrinh.dev</a
         ><br />
-        © 2025 | Educational Use Only
+        © 2025 • Educational Use Only
       </footer>
     </div>
 
