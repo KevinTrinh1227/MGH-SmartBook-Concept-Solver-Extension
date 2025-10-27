@@ -63,3 +63,9 @@ If you prefer to install via source code:
 git clone https://github.com/kevintrinh1227/mcgrawhill-concepts-bot.git
 cd mcgrawhill-concepts-bot
 ```
+
+## ⚠️ Legal Notice
+
+This project is not affiliated with McGraw-Hill Education or any educational institution.
+All trademarks, names, and content belong to their respective owners.
+Use responsibly and for educational demonstration purposes only.
