@@ -10,13 +10,9 @@
 
 <p align="center">
   <img src="src/assets/demo_1.gif" alt="Demo of McGraw-Hill SmartBook Solver" width="420">
-  <br>
-  <em>Demo: Automatically solving SmartBook concept questions</em>
 </p>
 <p align="center">
   <img src="src/assets/demo_1.gif" alt="Demo of McGraw-Hill SmartBook Solver" width="420">
-  <br>
-  <em>Demo: Automatically solving SmartBook concept questions</em>
 </p>
 
 ## 📌 Important Notice & Disclaimer
