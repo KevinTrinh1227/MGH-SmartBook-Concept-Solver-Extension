@@ -8,9 +8,18 @@
   <em>A lightweight educational browser extension that demonstrates ethical automation by detecting and solving SmartBook concept questions — built for learning, research, and software development exploration.</em>
 </p>
 
----
+<p align="center">
+  <img src="src/assets/demo_1.gif" alt="Demo of McGraw-Hill SmartBook Solver" width="420">
+  <br>
+  <em>Demo: Automatically solving SmartBook concept questions</em>
+</p>
+<p align="center">
+  <img src="src/assets/demo_1.gif" alt="Demo of McGraw-Hill SmartBook Solver" width="420">
+  <br>
+  <em>Demo: Automatically solving SmartBook concept questions</em>
+</p>
 
-## ⚠️ Important Notice & Disclaimer
+## 📌 Important Notice & Disclaimer
 
 This project is built **strictly for educational and demonstration purposes only.** I **highly discourage** using this tool to cheat or violate any form of **academic integrity policies**.
 
@@ -25,7 +34,7 @@ This project serves as an **educational exploration** of web automation and brow
 
 ---
 
-## 🧠 Overview
+## 🧠 Overview / About
 
 The **McGraw-Hill SmartBook Solver** is a lightweight browser extension that demonstrates how automation can interact with educational web platforms. It automatically identifies and highlights correct SmartBook concept answers — while tracking your progress through the session and all-time statistics.
 
@@ -33,7 +42,7 @@ This project was **never published publicly** because I would never encourage ac
 
 ---
 
-## ✨ Key Features
+## ✨ Browser Extension Features
 
 - **Auto-solves SmartBook concept questions** intelligently and efficiently
 - Supports **multiple question types** — including drag & drop, fill-in-the-blank, and multiple-choice
@@ -49,30 +58,14 @@ All of these browsers support the **same Chromium extension system**, ensuring s
 
 ---
 
-## 🧭 How to Use the Browser Extension <a id="how-to-use"></a>
-
-1. **Open McGraw-Hill SmartBook** assignment on your compatable browser.
-2. Click browser extensions toolbar and click on the Solver Extension. (Recommend that you pin it)
-3. Read and acknowledge the disclaimer:
-   - Type your full name.
-   - Check “I agree to the terms above.”
-   - Click **I Agree & Understand**.
-4. In the pop-up, toggle the switch to **ON**.  
-   The solver will automatically start detecting and solving concept questions.
-
-> You can always stop it at any time by switching it back **OFF**.  
-> Stats like total solved, attempts, and uptime are tracked automatically.
-
----
-
-## ⚙️ Installation Guide
+## ⚙️ Installation / Setup Guide <a id="setup-guide"></a>
 
 ### Option 1 — Manual Install (Recommended)
 
 1. **Download the latest stable release**
 
    - Visit the [📦 Releases Page](https://github.com/KevinTrinh1227/McGrawHill-SmartBook-Solver/releases)
-   - Download the `.zip` file (e.g. `SmartBookSolver.zip`)
+   - Download the `.zip` file (e.g. `McGraw-Hill-SmartBook-Solver.zip`)
    - Extract it anywhere on your computer
 
 2. **Open the Chrome Extensions page**
@@ -90,22 +83,40 @@ All of these browsers support the **same Chromium extension system**, ensuring s
 4. **Load the Unpacked Extension**
 
    - Click **Load unpacked**
-   - Select your extracted folder (e.g., `SmartBookSolver/`)
+   - Select your extracted folder (e.g., `McGraw-Hill-SmartBook-Solver/`)
 
-5. ✅ **Done!**
+5. **Done!**
    - The 📘 icon should now appear in your toolbar
    - Pin it for faster access if desired
 
 ---
 
-### Option 2 — Clone via Git
+### Option 2 — Clone via Git & Open Directory
 
 If you prefer direct source installation:
 
 ```bash
-git clone https://github.com/KevinTrinh1227/McGrawHill-SmartBook-Solver.git
-cd McGrawHill-SmartBook-Solver
+git clone https://github.com/KevinTrinh1227/McGraw-Hill-SmartBook-Solver.git
 ```
+
+```bash
+cd McGraw-Hill-SmartBook-Solver
+```
+
+---
+
+## 🧭 How to Use the Browser Extension <a id="how-to-use"></a>
+
+1. **Open A McGraw-Hill SmartBook** chapter concepts assignment and click begin questions.
+2. Click browser extensions toolbar and click on the Solver Extension. (Pin it for easy access)
+3. Read and acknowledge the one-time liability disclaimer:
+   - Type your full name.
+   - Check “I agree to the terms above.”
+   - Click **I Agree & Understand**.
+4. In the pop-up, toggle the switch to **ON**.  
+   The solver will automatically start detecting and solving concept questions.
+
+> You can always stop it at any time by switching it back **OFF**. Stats like total solved, attempts, and uptime are tracked automatically.
 
 ---
 
@@ -124,17 +135,15 @@ Rather than aiming for high accuracy through AI or answer scraping, it works thr
 
 Because all logic runs **entirely offline**, it makes no API calls or external requests — ensuring privacy, performance, and reliability.
 
-If SmartBook redirects you to a reading section after too many missed attempts,  
-the extension will **automatically navigate back to the question screen** and continue working.
+If SmartBook redirects you to a reading section after too many missed attempts, the extension will **automatically navigate back to the question screen** and continue working.
 
-✅ **Supported Question Types:**
+**Supported Question Types:**
 
 - Multiple Choice
 - Fill in the Blank
 - Drag and Drop
 
-In short — this tool simulates the natural learning cycle of “trial and improvement,”  
-making SmartBook sessions smoother, faster, and more focused on completion efficiency rather than accuracy chasing.
+In short — this tool simulates the natural learning cycle of “trial and improvement,” making SmartBook sessions smoother, faster, and more focused on completion efficiency rather than accuracy chasing.
 
 ---
 
