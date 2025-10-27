@@ -1,0 +1,43 @@
+# Node / Dependency files (if you ever add npm)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Local environment / secrets
+.env
+.env.local
+.env.*.local
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Build & distribution artifacts
+*.zip
+*.crx
+*.pem
+dist/
+build/
+out/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Chrome storage data (in case of local testing backups)
+chrome-extension-storage.json
+chrome-storage-backup.json
+
+# Temp / cache folders
+tmp/
+temp/
+.cache/
+
+# IDE files
+.vscode/
+.idea/
+
+# System
+__MACOSX/

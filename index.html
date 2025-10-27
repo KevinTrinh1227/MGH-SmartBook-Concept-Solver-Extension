@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>McGrawHill Concepts Bot</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- STEP 1: Disclaimer -->
+    <div id="disclaimerScreen" class="active">
+      <h1 class="project-title">McGrawHill Concepts Bot</h1>
+      <h2 class="disclaimer-header">⚠️ Terms Of Service</h2>
+      <div id="disclaimerBox">
+        <p>
+          This extension was built for
+          <strong>educational and demonstration</strong> purposes only. Using
+          automation on courseware may violate academic-integrity policies.
+        </p>
+        <p>
+          By proceeding, you acknowledge that the developer assumes
+          <strong>no liability</strong> for misuse, and that you alone are
+          responsible for your actions.
+        </p>
+      </div>
+
+      <label class="checkbox-agree">
+        <input type="checkbox" id="agreeCheckbox" /> I have read and agree to
+        the terms above.
+      </label>
+      <button id="agreeBtn" disabled>I Agree & Continue</button>
+    </div>
+
+    <!-- STEP 2: Main Control Screen -->
+    <div id="mainScreen" style="display: none">
+      <img class="logo" src="logo.png" alt="Bot Logo" />
+      <h1 class="project-title">McGrawHill Concepts Bot</h1>
+
+      <p class="subtitle">
+        Automatically solves McGrawHill SmartBook concept questions. For
+        educational purposes only. Use at your own discretion.
+      </p>
+
+      <!-- Toggle Switch & Status -->
+      <div id="statusBox">
+        <label class="switch">
+          <input type="checkbox" id="botToggle" />
+          <span class="slider"></span>
+        </label>
+        <span id="statusText">Status: <b style="color: #888">OFF</b></span>
+      </div>
+
+      <!-- Stats Section -->
+      <div id="statsBox">
+        <h3>My Stats</h3>
+
+        <div class="stats-grid">
+          <div class="stat-item">
+            <span class="stats-label">All-time solved:</span>
+            <span id="statAllTimeSolved">0</span>
+          </div>
+          <div class="stat-item">
+            <span class="stats-label">Session solved:</span>
+            <span id="statSolved">0</span>
+          </div>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat-item">
+            <span class="stats-label">All-time attempted:</span>
+            <span id="statAllTimeStored">0</span>
+          </div>
+          <div class="stat-item">
+            <span class="stats-label">Session attempted:</span>
+            <span id="statStored">0</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Buttons -->
+      <div id="bottomButtons">
+        <a
+          href="https://github.com/kevintrinh1227/mcgrawhill-concepts-bot"
+          target="_blank"
+          class="action-btn"
+        >
+          <img
+            src="https://cdn.jsdelivr.net/gh/tabler/tabler-icons/icons/download.svg"
+            class="btn-icon"
+          />
+          Download
+        </a>
+
+        <a
+          href="https://github.com/kevintrinh1227/mcgrawhill-concepts-bot/issues"
+          target="_blank"
+          class="action-btn"
+        >
+          <img
+            src="https://cdn.jsdelivr.net/gh/tabler/tabler-icons/icons/help-circle.svg"
+            class="btn-icon"
+          />
+          Support
+        </a>
+      </div>
+
+      <footer>
+        Built by
+        <a href="https://www.kevintrinh.dev" target="_blank">Kevin Trinh</a
+        ><br />
+        © 2025 | Educational Use Only
+      </footer>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
