@@ -1,4 +1,4 @@
-# OS
+# OS files
 .DS_Store
 Thumbs.db
 
@@ -10,9 +10,12 @@ Thumbs.db
 dist/
 build/
 
-# Node / NPM (if ever used)
+# Node/npm stuff (in case you add a build script later)
 node_modules/
 
-# IDE settings
+# IDE/editor settings
 .vscode/
 .idea/
+
+# Temporary
+*.tmp
