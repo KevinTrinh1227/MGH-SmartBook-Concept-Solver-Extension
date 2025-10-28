@@ -67,7 +67,8 @@
 
 ## 📌 About & Important Info <a id="about"></a>
 
-The **McGraw-Hill SmartBook Solver** is a lightweight browser extension that automatically goes through your **McGraw-Hill SmartBook Concept Assignments**, continuously solving questions until completion. It identifies and highlights correct answers, tracks your progress, and demonstrates how web automation can streamline repetitive study tasks. Since SmartBook Concept Assignments are participation-based learning tools, the extension initially selects answers at random and later reuses correct ones from local memory to simulate progressive mastery — purely for educational demonstration, not for graded coursework.. This is the best approach since these assignments are only graded on completion and not accuracy.
+The **McGraw-Hill SmartBook Solver** is a lightweight browser extension that automatically goes through your **McGraw-Hill SmartBook Concept Assignments**, continuously solving questions until completion. It identifies and highlights correct answers, tracks your progress, and demonstrates how web automation can streamline repetitive study tasks. Since SmartBook Concept Assignments are **participation-based learning tools**, the extension first selects answers **randomly**, then **reuses the correct ones from local memory** to simulate progressive mastery — purely for **educational demonstration**, not for graded coursework.  
+This approach works best because these assignments are graded on **completion**, not accuracy.
 
 This web browser extension is compatible with all Chromium-based browsers, including (but not limited to):
 1. Google Chrome
@@ -106,12 +107,11 @@ This repository does not provide, distribute, or endorse any copyrighted McGraw-
 
 ## ✨ Features <a id="features"></a>
 
-- **Auto-solves SmartBook concept questions** intelligently and efficiently
+- **Auto-completes SmartBook concepts** efficiently
 - Supports **multiple question types** — including drag & drop, fill-in-the-blank, and multiple-choice
 - Clean, intuitive, and **user-friendly popup interface**
 - Tracks both **session and all-time statistics**
 - Displays **uptime counter** and **real-time activity status**
-- Built-in **Terms of Service acknowledgment** for ethical use
 - **Lightweight and secure** — runs locally with no external data collection
 - Compatible with **all Chromium-based browsers**, including (but not limited to):  
   Google Chrome, Microsoft Edge, Brave, Opera, Vivaldi, Arc Browser, Chromium (open-source), Opera GX, Samsung Internet (Desktop Beta), Iron Browser, Blisk Developer Browser, Kiwi Browser (Android), Yandex Browser, and many more.
@@ -126,7 +126,7 @@ All of these browsers support the **same Chromium extension system**, ensuring s
 
 1. **Download the latest stable release**
 
-   - Visit the [📦 Releases Page](https://github.com/KevinTrinh1227/McGrawHill-SmartBook-Solver/releases)
+   - Visit the [📦 Releases Page](https://github.com/KevinTrinh1227/McGraw-Hill-SmartBook-Solver/releases)
    - Download the `.zip` file (e.g. `McGraw-Hill-SmartBook-Solver.zip`)
    - Extract it anywhere on your computer
 
@@ -145,11 +145,11 @@ All of these browsers support the **same Chromium extension system**, ensuring s
 4. **Load the Unpacked Extension**
 
    - Click **Load unpacked**
-   - Select your extracted folder (e.g., `McGraw-Hill-SmartBook-Solver/`)
+   - Select your extracted folder (e.g., `McGraw-Hill-SmartBook-Solver/`, or whatever the folder name is)
 
 5. **Done!**
-   - The 📘 icon should now appear in your toolbar
-   - Pin it for faster access if desired
+   - The icon should now appear in your toolbar.
+   - Pin it for faster access if desired!
 
 ### Option 2 — Clone via Git & Open Directory
 
@@ -189,10 +189,8 @@ cd McGraw-Hill-SmartBook-Solver
 
 ## 🧩 Conclusion <a id="conclusion"></a>
 
-This project began as a fun and educational experiment, inspired by a similar idea I once saw, to better understand browser extensions, web automation, and content scripting.
-It was an opportunity to explore how web interfaces can be interacted with programmatically and how extensions can improve user experience through automation.
+**This project began as a fun and educational experiment**, inspired by a similar idea I once saw, to better understand **browser extensions**, **web automation**, and **content scripting**. It provided an opportunity to explore how web interfaces can be interacted with programmatically and how extensions can enhance user experiences through automation.
 
-That said, this tool was created strictly for educational and research purposes only. I do not encourage, support, or condone using this extension to bypass coursework or violate any academic integrity policy.
+That said, this tool was created **strictly for educational and research purposes only.** I do **not** encourage, support, or condone using this extension to bypass coursework or violate any **academic integrity** policy.
 
-SmartBook assignments are meant to help you learn by doing, not to test automation capabilities.
-I highly encourage everyone to maintain academic integrity, complete assignments honestly, and use projects like this one purely to learn development and ethical programming practices.
+**SmartBook assignments are designed to help you learn by doing**, not to test automation capabilities. I **highly encourage everyone** to maintain academic integrity, complete assignments honestly, and use projects like this one purely to **learn software development and ethical programming practices.**
