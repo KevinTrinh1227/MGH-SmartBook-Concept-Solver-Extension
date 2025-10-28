@@ -9,13 +9,14 @@
 </p>
 
 <p align="center">
-  <img src="src/assets/demo_2.gif" alt="Demo of McGraw-Hill SmartBook Solver" width="800px">
+  <img src="src/assets/demo_1.gif" alt="Demo of McGraw-Hill SmartBook Solver 1" width="800px">
 </p>
 
 <details>
   <summary align="center">CLICK TO SEE MORE DEMO EXAMPLES</summary>
     <a href="https://www.kevintrinh.dev" target="_blank">
-      <img src="src/assets/demo_1.gif" alt="Demo of McGraw-Hill SmartBook Solver"  width="800px">
+      <img src="src/assets/demo_2.gif" alt="Demo of McGraw-Hill SmartBook Solver 2"  width="800px">
+      <img src="src/assets/demo_3.gif" alt="Demo of McGraw-Hill SmartBook Solver 3"  width="800px">
     </a>
 </details>
 
