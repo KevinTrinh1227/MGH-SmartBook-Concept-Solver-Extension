@@ -98,7 +98,7 @@ By using this extension, you acknowledge and agree to the following:
 
 This project serves as an **educational exploration** of web automation and browser extension development — **not** as a cheating tool.
 
-<strong>[📝 Click To View Full Disclaimer Info](https://github.com/KevinTrinh1227/McGraw-Hill-SmartBook-Solver/blob/main/DISCLAIMER.MD)</strong> • <strong>[👮 View McGraw-Hill's Terms of Use / Policy](https://www.mheducation.com/about-us/policy-center/terms-use)</strong>
+<strong><a href="https://github.com/KevinTrinh1227/McGraw-Hill-SmartBook-Solver/blob/main/DISCLAIMER.MD" target="_blank">📝 Click To View Full Disclaimer Info</a></strong> • <strong><a href="https://www.mheducation.com/about-us/policy-center/terms-use" target="_blank">👮 View McGraw-Hill's Terms of Use / Policy</a></strong>
 </details>
 This repository does not provide, distribute, or endorse any copyrighted McGraw-Hill content.
 
