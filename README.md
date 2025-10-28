@@ -110,7 +110,7 @@ All of these browsers support the **same Chromium extension system**, ensuring s
 
 ---
 
-## ⚙️ Installation / Setup Guide <a id="setup-guide"></a>
+## ⚙️ Installation / Usage Guide <a id="installation-and-usage-guide"></a>
 
 ### Option 1 — Manual Install (Recommended)
 
