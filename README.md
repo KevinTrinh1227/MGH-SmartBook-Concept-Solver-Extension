@@ -110,7 +110,7 @@ All of these browsers support the **same Chromium extension system**, ensuring s
 
 ---
 
-## ⚙️ Installation / Usage Guide <a id="installation-and-usage-guide"></a>
+## 🧭 Installation / Usage Guide <a id="installation-and-usage-guide"></a>
 
 ### Option 1 — Manual Install (Recommended)
 
@@ -141,8 +141,6 @@ All of these browsers support the **same Chromium extension system**, ensuring s
    - The 📘 icon should now appear in your toolbar
    - Pin it for faster access if desired
 
----
-
 ### Option 2 — Clone via Git & Open Directory
 
 If you prefer direct source installation:
@@ -157,7 +155,7 @@ cd McGraw-Hill-SmartBook-Solver
 
 ---
 
-## 🧭 How to Use the Browser Extension <a id="how-to-use"></a>
+## How to Use the Browser Extension <a id="how-to-use"></a>
 
 1. **Open A McGraw-Hill SmartBook** chapter concepts assignment and click begin questions.
 2. Click browser extensions toolbar and click on the Solver Extension. (Pin it for easy access)
