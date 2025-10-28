@@ -6,9 +6,8 @@
 
 <p align="center">
   <em>
-    A browser extension that continuously solves all your 
-    <strong>McGraw-Hill SmartBook concept questions</strong> — fully offline, fast, 
-    and easy to use for completion efficiency. This personal side project is entirely <strong>experimental</strong> and was made for <strong>educational purposes only</strong>. 
+    A browser extension that automates McGraw-Hill SmartBook Concepts — fully offline, fast, 
+    and easy to use for learning and completion efficiency. This personal side project is entirely <strong>experimental</strong> and was made for <strong>educational purposes only</strong>. 
   </em>
 </p>
 <div align="center">
@@ -57,7 +56,7 @@
 
 ## 📌 About
 
-The **McGraw-Hill SmartBook Solver** is a lightweight browser extension that automatically goes through your **McGraw-Hill SmartBook Concept Assignments**, continuously solving questions until completion. It identifies and highlights correct answers, tracks your progress through **session and all-time statistics**, and drastically reduces the time needed to complete concept-based assignments. This SmartBook Solver is fully offline, so no AI is used. Since SmartBook Concept Assignments are graded as completion grades, we first randomly guess and then correctly answer the question the next encounter to pass the concept. This is the best approach since these assignments are only graded on completion and not accuracy.
+The **McGraw-Hill SmartBook Solver** is a lightweight browser extension that automatically goes through your **McGraw-Hill SmartBook Concept Assignments**, continuously solving questions until completion. It identifies and highlights correct answers, tracks your progress, and demonstrates how web automation can streamline repetitive study tasks. Since SmartBook Concept Assignments are participation-based learning tools, the extension initially selects answers at random and later reuses correct ones from local memory to simulate progressive mastery — purely for educational demonstration, not for graded coursework.. This is the best approach since these assignments are only graded on completion and not accuracy.
 
 This web browser extension is compatible with all Chromium-based browsers, including (but not limited to):
 1. Google Chrome
@@ -77,7 +76,7 @@ This project was **never published publicly** because I do **not encourage acade
   <summary><strong>Important Notice & Disclaimer (Click to View)</strong></summary>
   <br>
 
-This project is built **strictly for educational and demonstration purposes only.** I **highly discourage** using this tool to cheat or violate any form of **academic integrity policies**.
+This project is built solely for educational and demonstration purposes. It should never be used to cheat, bypass coursework, or violate any academic integrity policies..
 
 By using this extension, you acknowledge and agree to the following:
 
@@ -90,6 +89,7 @@ This project serves as an **educational exploration** of web automation and brow
 
 <strong>[📝 Click To View Full Disclaimer Info](https://github.com/KevinTrinh1227/McGraw-Hill-SmartBook-Solver/blob/main/DISCLAIMER.MD)</strong> • <strong>[👮 View McGraw-Hill's Terms of Use / Policy](https://www.mheducation.com/about-us/policy-center/terms-use)</strong>
 </details>
+This repository does not provide, distribute, or endorse any copyrighted McGraw-Hill content.
 
 ---
 
@@ -176,35 +176,12 @@ cd McGraw-Hill-SmartBook-Solver
 
 ---
 
-## ⚙️ How It Works (Under the Hood)
-
-McGraw-Hill SmartBook “Concepts” assignments are designed as **participation-based learning activities** — not exams. You don’t earn points for getting every question correct; instead, you “master” each concept over time through practice and repetition. SmartBook Concept Assignments are only for completion grades.
-
-This extension was built with that philosophy in mind. Rather than aiming for high accuracy through AI or answer scraping, it works through **progressive learning automation**:
-
-- The bot **selects answers randomly** on the first attempt.
-- If it gets a question **wrong**, it quietly **stores the correct answer** for that concept locally (offline).
-- When that same question reappears later, the bot **answers it correctly** the next time.
-- Over time, the extension builds a **local cache of mastered questions**, completing concepts more efficiently.
-
-Because all logic runs **entirely offline**, it makes no API calls or external requests — ensuring privacy, performance, and reliability.
-
-If SmartBook redirects you to a reading section after too many missed attempts, the extension will **automatically navigate back to the question screen** and continue working.
-
-**Supported Question Types:**
-
-- Multiple Choice
-- Fill in the Blank
-- Drag and Drop
-
-In short, this tool simulates the natural learning cycle of “trial and improvement,” making SmartBook sessions smoother, faster, and more focused on completion efficiency rather than accuracy chasing.
-
----
-
 ## 🧩 Conclusion
 
-This project began as a **fun and educational experiment** — inspired by a similar idea I once came across — to learn more about how **browser extensions**, **web automation**, and **content scripting** work under the hood. It was a valuable opportunity to explore how the DOM can be interacted with programmatically and how extensions can enhance or automate user experiences.
+This project began as a fun and educational experiment, inspired by a similar idea I once saw, to better understand browser extensions, web automation, and content scripting.
+It was an opportunity to explore how web interfaces can be interacted with programmatically and how extensions can improve user experience through automation.
 
-That said, this tool was created **strictly for educational and research purposes only.** I do **not** encourage, support, or condone using this extension to bypass academic effort or violate any form of academic integrity policy.
+That said, this tool was created strictly for educational and research purposes only. I do not encourage, support, or condone using this extension to bypass coursework or violate any academic integrity policy.
 
-SmartBook assignments are designed to help you **learn through practice**, not to test your ability to cheat automation systems. I **highly encourage everyone** to maintain integrity, complete assignments honestly, and use projects like this one purely to **understand browser development concepts** — not to misuse them.
+SmartBook assignments are meant to help you learn by doing, not to test automation capabilities.
+I highly encourage everyone to maintain academic integrity, complete assignments honestly, and use projects like this one purely to learn development and ethical programming practices.
