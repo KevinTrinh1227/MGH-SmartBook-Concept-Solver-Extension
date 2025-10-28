@@ -149,10 +149,8 @@ cd McGraw-Hill-SmartBook-Solver
 
 <p align="center">
   <a href="https://github.com/KevinTrinh1227/McGraw-Hill-SmartBook-Solver/releases/latest/download/McGraw-Hill-SmartBook-Solver.zip">
-      <img src="https://raw.githubusercontent.com/KevinTrinh1227/McGraw-Hill-SmartBook-Solver/refs/heads/main/src/assets/home_off.png" 
-         alt="Extension Main UI" width="450px">
-      <img src="https://raw.githubusercontent.com/KevinTrinh1227/McGraw-Hill-SmartBook-Solver/refs/heads/main/src/assets/home_on.png" 
-   alt="Extension Main UI" width="450px">
+      <img src="https://raw.githubusercontent.com/KevinTrinh1227/McGraw-Hill-SmartBook-Solver/refs/heads/main/src/assets/home_switch.gif" 
+         alt="Home UI Switch" width="450px">
   </a>
 </p>
 
