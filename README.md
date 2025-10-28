@@ -178,3 +178,6 @@ By using this software, you agree that:
 - The author assumes no responsibility or liability for misuse.
 
 - This tool is strictly for ethical learning, research, and software development purposes.
+
+<strong>[📝 Click To View Full Disclaimer Info](./DISCLAIMER.md)</strong>
+
