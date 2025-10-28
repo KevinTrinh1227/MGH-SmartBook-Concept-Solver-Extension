@@ -34,11 +34,9 @@
 
 ## 📌 About & Important Info
 
-The **McGraw-Hill SmartBook Solver** is a lightweight browser extension that automatically goes through your **McGraw-Hill SmartBook Concept Assignments**, continuously solving questions until completion.  
-It identifies and highlights correct answers, tracks your progress through **session and all-time statistics**, and drastically reduces the time needed to complete concept-based assignments.
+The **McGraw-Hill SmartBook Solver** is a lightweight browser extension that automatically goes through your **McGraw-Hill SmartBook Concept Assignments**, continuously solving questions until completion. It identifies and highlights correct answers, tracks your progress through **session and all-time statistics**, and drastically reduces the time needed to complete concept-based assignments. This SmartBook Solver is fully offline, so no AI is used. Although this solver might get a lot of questions wrong, after getting it wrong once, when it encounters the same question again, it'll correctly answer it. This is the best approach since these assignments are only graded on completion and not accuracy. 
 
-This project was **never published publicly** because I do **not encourage academic dishonesty**.  
-It exists purely as an **educational exercise in DOM automation, browser scripting, and ethical programming**.
+This project was **never published publicly** because I do **not encourage academic dishonesty**. It exists purely for **educational purposes only while also providing practice in DOM automation, browser scripting, and ethical programming**. Essentially just a cool side project I thought about making since I saw a student using something similar to this once, but couldn't find it anywhere anymore. 
 
 <details>
   <summary><strong>Important Notice & Disclaimer (Click to View)</strong></summary>
