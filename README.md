@@ -165,7 +165,7 @@ cd McGraw-Hill-SmartBook-Solver
 
 ---
 
-## How to Use the Browser Extension (Not advised) <a id="how-to-use"></a>
+## 🚀 How to Use the Browser Extension (Not advised) <a id="how-to-use"></a>
 
 1. **Open A McGraw-Hill SmartBook** chapter concepts assignment and click begin questions.
 2. Click the browser extensions toolbar and click on the Solver Extension. (Pin it for easy access)
