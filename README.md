@@ -138,11 +138,9 @@ cd McGraw-Hill-SmartBook-Solver
 
 ## ⚙️ How It Works (Under the Hood)
 
-McGraw-Hill SmartBook “Concepts” assignments are designed as **participation-based learning activities** — not exams.  
-You don’t earn points for getting every question correct; instead, you “master” each concept over time through practice and repetition.
+McGraw-Hill SmartBook “Concepts” assignments are designed as **participation-based learning activities** — not exams. You don’t earn points for getting every question correct; instead, you “master” each concept over time through practice and repetition. SmartBook Concept Assignments are only for completion grades.
 
-This extension was built with that philosophy in mind.  
-Rather than aiming for high accuracy through AI or answer scraping, it works through **progressive learning automation**:
+This extension was built with that philosophy in mind. Rather than aiming for high accuracy through AI or answer scraping, it works through **progressive learning automation**:
 
 - The bot **selects answers randomly** on the first attempt.
 - If it gets a question **wrong**, it quietly **stores the correct answer** for that concept locally (offline).
