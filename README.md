@@ -51,10 +51,21 @@
   </p>
 </details>
 
+---
+
+<p align="center">
+  <strong>Table of Contents</strong><br>
+  <a href="https://github.com/KevinTrinh1227/McGraw-Hill-SmartBook-Solver/blob/main/DISCLAIMER.MD" target="_blank"><strong>Notice & Disclaimer</strong></a> • 
+  <a href="#about"><strong>About</strong></a> • 
+  <a href="#features"><strong>Features</strong></a> • 
+  <a href="#installation-and-usage-guide"><strong>Installation Guide</strong></a> • 
+  <a href="#how-to-use"><strong>Usage Example Guide</strong></a> • 
+  <a href="#conclusion"><strong>Conclusion</strong></a>
+</p>
 
 ---
 
-## 📌 About
+## 📌 About & Important Info <a id="about"></a>
 
 The **McGraw-Hill SmartBook Solver** is a lightweight browser extension that automatically goes through your **McGraw-Hill SmartBook Concept Assignments**, continuously solving questions until completion. It identifies and highlights correct answers, tracks your progress, and demonstrates how web automation can streamline repetitive study tasks. Since SmartBook Concept Assignments are participation-based learning tools, the extension initially selects answers at random and later reuses correct ones from local memory to simulate progressive mastery — purely for educational demonstration, not for graded coursework.. This is the best approach since these assignments are only graded on completion and not accuracy.
 
@@ -93,7 +104,7 @@ This repository does not provide, distribute, or endorse any copyrighted McGraw-
 
 ---
 
-## ✨ Features
+## ✨ Features <a id="features"></a>
 
 - **Auto-solves SmartBook concept questions** intelligently and efficiently
 - Supports **multiple question types** — including drag & drop, fill-in-the-blank, and multiple-choice
@@ -109,7 +120,7 @@ All of these browsers support the **same Chromium extension system**, ensuring s
 
 ---
 
-## 🧭 Installation / Usage Guide <a id="installation-and-usage-guide"></a>
+## 🧭 Installation / Example Usage Guide <a id="installation-and-usage-guide"></a>
 
 ### Option 1 — Manual Install (Recommended)
 
@@ -154,10 +165,10 @@ cd McGraw-Hill-SmartBook-Solver
 
 ---
 
-## How to Use the Browser Extension <a id="how-to-use"></a>
+## How to Use the Browser Extension (Not advised) <a id="how-to-use"></a>
 
 1. **Open A McGraw-Hill SmartBook** chapter concepts assignment and click begin questions.
-2. Click browser extensions toolbar and click on the Solver Extension. (Pin it for easy access)
+2. Click the browser extensions toolbar and click on the Solver Extension. (Pin it for easy access)
 3. Read and acknowledge the one-time liability disclaimer:
    - Type your full name.
    - Check “I agree to the terms above.”
@@ -176,7 +187,7 @@ cd McGraw-Hill-SmartBook-Solver
 
 ---
 
-## 🧩 Conclusion
+## 🧩 Conclusion <a id="conclusion"></a>
 
 This project began as a fun and educational experiment, inspired by a similar idea I once saw, to better understand browser extensions, web automation, and content scripting.
 It was an opportunity to explore how web interfaces can be interacted with programmatically and how extensions can improve user experience through automation.
