@@ -11,6 +11,21 @@
     and easy to use for completion efficiency. Run this in the background while you do other tasks like watching Netflix / YouTube or doing other assignments. 
   </em>
 </p>
+<div align="center">
+
+  <!-- Total Downloads -->
+  <img src="https://img.shields.io/github/downloads/KevinTrinh1227/McGraw-Hill-SmartBook-Solver/total?color=brightgreen&label=Downloads&style=for-the-badge" alt="Downloads badge" />
+
+  <!-- Last Commit -->
+  <img src="https://img.shields.io/github/last-commit/KevinTrinh1227/McGraw-Hill-SmartBook-Solver?color=yellow&label=Last%20Updated&style=for-the-badge" alt="Last Updated Badge" />
+
+  <!-- Maintenance Status -->
+  <img src="https://img.shields.io/badge/Maintenance-Experimental-blue?style=for-the-badge" alt="Maintenance status" />
+
+  <!-- Latest Release -->
+  <img src="https://img.shields.io/github/v/release/KevinTrinh1227/McGraw-Hill-SmartBook-Solver?color=orange&label=Latest%20Release&style=for-the-badge" alt="Release badge" />
+
+</div>
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/KevinTrinh1227/McGraw-Hill-SmartBook-Solver/refs/heads/main/src/assets/demo_1.gif" alt="Demo of McGraw-Hill SmartBook Solver 1" width="850px">
