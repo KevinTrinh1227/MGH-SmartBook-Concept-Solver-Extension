@@ -6,9 +6,9 @@
 
 <p align="center">
   <em>
-    A lightweight web browser extension that continuously solves all your 
+    A browser extension that continuously solves all your 
     <strong>McGraw-Hill SmartBook concept questions</strong> — fully offline, fast, 
-    and easy to use for completion efficiency. Run this in the background while you do other tasks like watching Netflix / YouTube or doing other assignments. 
+    and easy to use for completion efficiency. This personal side project is entirely <strong>experimental</strong> and was made for <strong>educational purposes only</strong>. 
   </em>
 </p>
 <div align="center">
@@ -77,8 +77,7 @@ This project was **never published publicly** because I do **not encourage acade
   <summary><strong>Important Notice & Disclaimer (Click to View)</strong></summary>
   <br>
 
-This project is built **strictly for educational and demonstration purposes only.**  
- I **highly discourage** using this tool to cheat or violate any form of **academic integrity policies**.
+This project is built **strictly for educational and demonstration purposes only.** I **highly discourage** using this tool to cheat or violate any form of **academic integrity policies**.
 
 By using this extension, you acknowledge and agree to the following:
 
@@ -89,7 +88,7 @@ By using this extension, you acknowledge and agree to the following:
 
 This project serves as an **educational exploration** of web automation and browser extension development — **not** as a cheating tool.
 
-<strong>[📝 Click To View Full Disclaimer Info](https://github.com/KevinTrinh1227/McGraw-Hill-SmartBook-Solver/blob/main/DISCLAIMER.MD)</strong>
+<strong>[📝 Click To View Full Disclaimer Info](https://github.com/KevinTrinh1227/McGraw-Hill-SmartBook-Solver/blob/main/DISCLAIMER.MD)</strong> • <strong>[👮 View McGraw-Hill's Terms of Use / Policy](https://www.mheducation.com/about-us/policy-center/terms-use)</strong>
 </details>
 
 ---
@@ -199,3 +198,13 @@ If SmartBook redirects you to a reading section after too many missed attempts, 
 - Drag and Drop
 
 In short, this tool simulates the natural learning cycle of “trial and improvement,” making SmartBook sessions smoother, faster, and more focused on completion efficiency rather than accuracy chasing.
+
+---
+
+## 🧩 Conclusion
+
+This project began as a **fun and educational experiment** — inspired by a similar idea I once came across — to learn more about how **browser extensions**, **web automation**, and **content scripting** work under the hood. It was a valuable opportunity to explore how the DOM can be interacted with programmatically and how extensions can enhance or automate user experiences.
+
+That said, this tool was created **strictly for educational and research purposes only.** I do **not** encourage, support, or condone using this extension to bypass academic effort or violate any form of academic integrity policy.
+
+SmartBook assignments are designed to help you **learn through practice**, not to test your ability to cheat automation systems. I **highly encourage everyone** to maintain integrity, complete assignments honestly, and use projects like this one purely to **understand browser development concepts** — not to misuse them.
