@@ -71,6 +71,7 @@ The **McGraw-Hill SmartBook Solver** is a lightweight browser extension that aut
 This approach works best because these assignments are graded on **completion**, not accuracy.
 
 This web browser extension is compatible with all Chromium-based browsers, including (but not limited to):
+
 1. Google Chrome
 2. Brave
 3. Microsoft Edge
@@ -100,6 +101,7 @@ By using this extension, you acknowledge and agree to the following:
 This project serves as an **educational exploration** of web automation and browser extension development — **not** as a cheating tool.
 
 <strong><a href="https://github.com/KevinTrinh1227/McGraw-Hill-SmartBook-Solver/blob/main/DISCLAIMER.MD" target="_blank">📝 Click To View Full Disclaimer Info</a></strong> • <strong><a href="https://www.mheducation.com/about-us/policy-center/terms-use" target="_blank">👮 View McGraw-Hill's Terms of Use / Policy</a></strong>
+
 </details>
 This repository does not provide, distribute, or endorse any copyrighted McGraw-Hill content.
 
@@ -127,7 +129,7 @@ All of these browsers support the **same Chromium extension system**, ensuring s
 1. **Download the latest stable release**
 
    - Visit the [📦 Releases Page](https://github.com/KevinTrinh1227/McGraw-Hill-SmartBook-Solver/releases)
-   - Download the `.zip` file (e.g. `McGraw-Hill-SmartBook-Solver.zip`)
+   - Download the `.zip` file (e.g., `McGraw-Hill-SmartBook-Solver.zip`)
    - Extract it anywhere on your computer
 
 2. **Open the Chrome Extensions page**
@@ -163,19 +165,21 @@ git clone https://github.com/KevinTrinh1227/McGraw-Hill-SmartBook-Solver.git
 cd McGraw-Hill-SmartBook-Solver
 ```
 
+The folder to unpack would be the `/src/` folder.
+
 ---
 
 ## 🚀 How to Use the Browser Extension (Not advised) <a id="how-to-use"></a>
 
 1. **Open A McGraw-Hill SmartBook** chapter concepts assignment and click begin questions.
-2. Click the browser extensions toolbar and click on the Solver Extension. (Pin it for easy access)
+2. Click the browser extensions toolbar and click on the Browser Extension. (Pin it for easy access)
 3. Read and acknowledge the one-time liability disclaimer:
    - Type your full name.
    - Check “I agree to the terms above.”
    - Click **I Agree & Understand**.
-4. In the pop-up, toggle the switch to **ON**.  
+4. In the pop-up, toggle the switch to **ON**.
 <details>
-  <summary><strong>The solver will automatically start detecting and solving concept questions. (Click to View Pop Up)</strong></summary>
+  <summary><strong>The browser extension will automatically start detecting and automating/completing concepts. (Click to View Pop Up)</strong></summary>
   <br>
   <p align="center">
     <img src="https://raw.githubusercontent.com/KevinTrinh1227/McGraw-Hill-SmartBook-Solver/refs/heads/main/src/assets/home_switch.gif" 
