@@ -178,4 +178,4 @@ By using this software, you agree that:
 
 - This tool is strictly for ethical learning, research, and software development purposes.
 
-<strong>[📝 Click To View Full Disclaimer Info](./DISCLAIMER.md)</strong>
+<strong>[📝 Click To View Full Disclaimer Info](https://github.com/KevinTrinh1227/McGraw-Hill-SmartBook-Solver/blob/main/DISCLAIMER.MD)</strong>
