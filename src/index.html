@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>McGraw-Hill Smart Books Solver</title>
+    <title>McGraw-Hill Smart Book Solver</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <!-- STEP 1: Disclaimer -->
     <div id="disclaimerScreen" class="active">
-      <h1 class="project-title">McGraw-Hill Smart Books Solver</h1>
+      <h1 class="project-title">McGraw-Hill Smart Book Solver</h1>
       <h2 class="disclaimer-header">NOTICE: Terms Of Service</h2>
       <div id="disclaimerBox">
         <p>
@@ -45,7 +45,7 @@
     <!-- STEP 2: Main Control Screen -->
     <div id="mainScreen" style="display: none">
       <img class="logo" src="./assets/logo.png" alt="Bot Logo" />
-      <h1 class="project-title">McGraw-Hill Smart Books Solver</h1>
+      <h1 class="project-title">McGraw-Hill Smart Book Solver</h1>
 
       <p class="subtitle">
         Automatically solves McGrawHill SmartBook concept questions. Built for
@@ -71,25 +71,13 @@
           </span>
         </div>
 
+        <!-- Session Stat -->
         <div class="stats-grid">
           <div class="stat-item">
-            <span class="stats-label">All-time solved:</span>
-            <span id="statAllTimeSolved">0</span>
+            <p>Solved in Session: <span id="statSolved">0</span></p>
           </div>
           <div class="stat-item">
-            <span class="stats-label">Session solved:</span>
-            <span id="statSolved">0</span>
-          </div>
-        </div>
-
-        <div class="stats-grid">
-          <div class="stat-item">
-            <span class="stats-label">All-time attempted:</span>
-            <span id="statAllTimeStored">0</span>
-          </div>
-          <div class="stat-item">
-            <span class="stats-label">Session attempted:</span>
-            <span id="statStored">0</span>
+            <p>Total Solved: <span id="statAllTimeSolved">0</span></p>
           </div>
         </div>
       </div>

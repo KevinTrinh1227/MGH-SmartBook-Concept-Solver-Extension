@@ -1,27 +1,27 @@
 {
   "manifest_version": 3,
-  "name": "McGraw-Hill SmartBooks Solver",
-  "description": "Automates Solving McGraw-Hill SmartBook concept questions for educational and demonstration purposes only. Window must be active for it to continously solve questions.",
-  "version": "1.3.0",
+  "name": "McGraw-Hill SmartBook Solver",
+  "description": "Automatically interacts with McGraw-Hill SmartBook concept questions (educational use only).",
+  "version": "2.0.0",
   "author": "Kevin Trinh",
   "homepage_url": "https://www.kevintrinh.dev",
+
   "action": {
     "default_popup": "index.html",
-    "default_title": "McGraw-Hill SmartBooks Solver"
+    "default_title": "McGraw-Hill SmartBook Solver"
   },
 
-  "background": {
-    "service_worker": "serviceCore.js"
-  },
-
-  "permissions": ["activeTab", "storage", "scripting"],
-
-  "host_permissions": ["*://learning.mheducation.com/*"],
+  "background": { "service_worker": "serviceCore.js" },
+  "permissions": ["storage", "scripting", "activeTab"],
+  "host_permissions": [
+    "https://k59op4dxx4.execute-api.us-west-1.amazonaws.com/*"
+  ],
 
   "content_scripts": [
     {
       "matches": ["*://learning.mheducation.com/*"],
-      "js": ["contentSolver.js", "answerOverlay.js"]
+      "js": ["contentSolver.js", "answerOverlay.js"],
+      "run_at": "document_idle"
     }
   ],
 

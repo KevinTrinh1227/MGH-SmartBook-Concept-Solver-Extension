@@ -20,9 +20,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   const infoIcon = document.getElementById("infoIcon");
 
   const statAllTimeSolved = document.getElementById("statAllTimeSolved");
-  const statAllTimeStored = document.getElementById("statAllTimeStored");
   const statSolved = document.getElementById("statSolved");
-  const statStored = document.getElementById("statStored");
 
   // ---------- CREATE INLINE SESSION INFO ----------
   const sessionInfoBox = document.createElement("div");
@@ -47,6 +45,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   // ---------- HELPERS ----------
   const formatNumber = (num) => {
+    if (num == null || isNaN(num)) return "0";
     if (num >= 1_000_000) return (num / 1_000_000).toFixed(1) + "M";
     if (num >= 1_000) return (num / 1_000).toFixed(1) + "k";
     return num.toString();
@@ -54,9 +53,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   const updateStatsUI = (stats, allTime) => {
     statSolved.textContent = stats.solved;
-    statStored.textContent = stats.stored;
     statAllTimeSolved.textContent = formatNumber(allTime.solved);
-    statAllTimeStored.textContent = formatNumber(allTime.stored);
   };
 
   const formatTime = (ms) => {
@@ -99,8 +96,8 @@ document.addEventListener("DOMContentLoaded", async () => {
       "userAcceptedDisclaimer",
     ],
     (result) => {
-      const stats = result.stats || { solved: 0, stored: 0 };
-      const allTime = result.allTime || { solved: 0, stored: 0 };
+      const stats = result.stats || { solved: 0, attempted: 0 };
+      const allTime = result.allTime || { solved: 0, attempted: 0 };
       const botEnabled = result.botEnabled || false;
       const sessionStart = result.sessionStart || null;
       const accepted = result.userAcceptedDisclaimer || null;
@@ -195,15 +192,14 @@ document.addEventListener("DOMContentLoaded", async () => {
         startUptimeTimer(sessionStart);
 
         chrome.storage.local.get(["allTime"], (res) => {
-          const allTime = res.allTime || { solved: 0, stored: 0 };
+          const allTime = res.allTime || { solved: 0, attempted: 0 };
           chrome.storage.local.set({
-            stats: { solved: 0, stored: 0 },
+            stats: { solved: 0, attempted: 0 },
             allTime,
           });
         });
 
-        statSolved.textContent = "0";
-        statStored.textContent = "0";
+        statSolved.textContent = "0"; // ✅ keep this
       } else {
         stopUptimeTimer();
         chrome.storage.local.remove("sessionStart");
@@ -229,8 +225,8 @@ document.addEventListener("DOMContentLoaded", async () => {
   // ---------- LIVE STATS UPDATE ----------
   chrome.storage.onChanged.addListener(() => {
     chrome.storage.local.get(["stats", "allTime"], (res) => {
-      const stats = res.stats || { solved: 0, stored: 0 };
-      const allTime = res.allTime || { solved: 0, stored: 0 };
+      const stats = res.stats || { solved: 0, attempted: 0 };
+      const allTime = res.allTime || { solved: 0, attempted: 0 };
       updateStatsUI(stats, allTime);
     });
   });
