@@ -28,28 +28,48 @@
 </div>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/KevinTrinh1227/McGraw-Hill-SmartBook-Solver/refs/heads/main/src/assets/demo_1.gif" alt="Demo of McGraw-Hill SmartBook Solver 1" width="850px">
+  <a href="https://github.com/KevinTrinh1227/McGraw-Hill-SmartBook-Solver/releases/latest/download/McGraw-Hill-SmartBook-Solver.zip">
+    <img src="https://raw.githubusercontent.com/KevinTrinh1227/McGraw-Hill-SmartBook-Solver/refs/heads/main/src/assets/demo_1.gif" 
+         alt="Demo of McGraw-Hill SmartBook Solver 1" width="850px">
+  </a>
 </p>
 
 <details>
   <summary align="center"><strong>VIEW MORE DEMO EXAMPLES</strong></summary>
   <br>
   <p align="center">
-    <img src="https://raw.githubusercontent.com/KevinTrinh1227/McGraw-Hill-SmartBook-Solver/refs/heads/main/src/assets/demo_2.gif" 
-         alt="Demo 1 - SmartBook Solver" width="850px">
+    <a href="https://github.com/KevinTrinh1227/McGraw-Hill-SmartBook-Solver/releases/latest/download/McGraw-Hill-SmartBook-Solver.zip">
+      <img src="https://raw.githubusercontent.com/KevinTrinh1227/McGraw-Hill-SmartBook-Solver/refs/heads/main/src/assets/demo_2.gif" 
+           alt="Demo 2 - SmartBook Solver" width="850px">
+    </a>
   </p>
 
   <p align="center">
-    <img src="https://raw.githubusercontent.com/KevinTrinh1227/McGraw-Hill-SmartBook-Solver/refs/heads/main/src/assets/demo_3.gif" 
-         alt="Demo 3 - SmartBook Solver" width="850px">
+    <a href="https://github.com/KevinTrinh1227/McGraw-Hill-SmartBook-Solver/releases/latest/download/McGraw-Hill-SmartBook-Solver.zip">
+      <img src="https://raw.githubusercontent.com/KevinTrinh1227/McGraw-Hill-SmartBook-Solver/refs/heads/main/src/assets/demo_3.gif" 
+           alt="Demo 3 - SmartBook Solver" width="850px">
+    </a>
   </p>
 </details>
 
+
 ---
 
-## 📌 About & Important Info
+## 📌 About
 
-The **McGraw-Hill SmartBook Solver** is a lightweight browser extension that automatically goes through your **McGraw-Hill SmartBook Concept Assignments**, continuously solving questions until completion. It identifies and highlights correct answers, tracks your progress through **session and all-time statistics**, and drastically reduces the time needed to complete concept-based assignments. This SmartBook Solver is fully offline, so no AI is used. Although this solver might get a lot of questions wrong, after getting it wrong once, when it encounters the same question again, it'll correctly answer it. This is the best approach since these assignments are only graded on completion and not accuracy.
+The **McGraw-Hill SmartBook Solver** is a lightweight browser extension that automatically goes through your **McGraw-Hill SmartBook Concept Assignments**, continuously solving questions until completion. It identifies and highlights correct answers, tracks your progress through **session and all-time statistics**, and drastically reduces the time needed to complete concept-based assignments. This SmartBook Solver is fully offline, so no AI is used. Since SmartBook Concept Assignments are graded as completion grades, we first randomly guess and then correctly answer the question the next encounter to pass the concept. This is the best approach since these assignments are only graded on completion and not accuracy.
+
+This web browser extension is compatible with all Chromium-based browsers, including (but not limited to):
+1. Google Chrome
+2. Brave
+3. Microsoft Edge
+4. Opera GX
+5. Chromium (open-source)
+<details>
+  <summary><strong>Click to view other compatible browsers.</strong></summary>
+  <p>Arc Browser, Vivaldi, Samsung Internet (Desktop Beta), Iron Browser, Blisk Developer Browser, Kiwi Browser (Android), Yandex Browser, and many more.</p>
+</details>
+Google Chrome, Microsoft Edge, Brave, Opera, Vivaldi, Arc Browser, Chromium (open-source), Opera GX, Samsung Internet (Desktop Beta), Iron Browser, Blisk Developer Browser, Kiwi Browser (Android), Yandex Browser, and many more.
 
 This project was **never published publicly** because I do **not encourage academic dishonesty**. It exists purely for **educational purposes only while also providing practice in DOM automation, browser scripting, and ethical programming**. Essentially just a cool side project I thought about making since I saw a student using something similar to this once, but couldn't find it anywhere anymore.
 
@@ -69,6 +89,7 @@ By using this extension, you acknowledge and agree to the following:
 
 This project serves as an **educational exploration** of web automation and browser extension development — **not** as a cheating tool.
 
+<strong>[📝 Click To View Full Disclaimer Info](https://github.com/KevinTrinh1227/McGraw-Hill-SmartBook-Solver/blob/main/DISCLAIMER.MD)</strong>
 </details>
 
 ---
@@ -145,14 +166,14 @@ cd McGraw-Hill-SmartBook-Solver
    - Check “I agree to the terms above.”
    - Click **I Agree & Understand**.
 4. In the pop-up, toggle the switch to **ON**.  
-   The solver will automatically start detecting and solving concept questions.
-
-<p align="center">
-  <a href="https://github.com/KevinTrinh1227/McGraw-Hill-SmartBook-Solver/releases/latest/download/McGraw-Hill-SmartBook-Solver.zip">
-      <img src="https://raw.githubusercontent.com/KevinTrinh1227/McGraw-Hill-SmartBook-Solver/refs/heads/main/src/assets/home_switch.gif" 
+<details>
+  <summary><strong>The solver will automatically start detecting and solving concept questions. (Click to View Pop Up)</strong></summary>
+  <br>
+  <p align="center">
+    <img src="https://raw.githubusercontent.com/KevinTrinh1227/McGraw-Hill-SmartBook-Solver/refs/heads/main/src/assets/home_switch.gif" 
          alt="Home UI Switch" width="450px">
-  </a>
-</p>
+  </p>
+</details>
 
 > You can always stop it at any time by switching it back **OFF**. Stats like total solved, attempts, and uptime are tracked automatically.
 
@@ -180,20 +201,3 @@ If SmartBook redirects you to a reading section after too many missed attempts, 
 - Drag and Drop
 
 In short, this tool simulates the natural learning cycle of “trial and improvement,” making SmartBook sessions smoother, faster, and more focused on completion efficiency rather than accuracy chasing.
-
----
-
-## ⚖️ Legal Disclaimer
-
-This project is an independent educational tool and is not affiliated with McGraw-Hill Education or any academic institution.
-All trademarks, product names, and logos belong to their respective owners.
-
-By using this software, you agree that:
-
-- You use it at your own risk.
-
-- The author assumes no responsibility or liability for misuse.
-
-- This tool is strictly for ethical learning, research, and software development purposes.
-
-<strong>[📝 Click To View Full Disclaimer Info](https://github.com/KevinTrinh1227/McGraw-Hill-SmartBook-Solver/blob/main/DISCLAIMER.MD)</strong>
